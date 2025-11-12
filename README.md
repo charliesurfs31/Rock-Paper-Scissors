@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors
-My first Javascript project! Playing rock paper scissors against in the console.
+My first Javascript project! Playing rock paper scissors in the console.
