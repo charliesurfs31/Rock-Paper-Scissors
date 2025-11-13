@@ -1,7 +1,3 @@
-// declare score variables
-let humanScore = 0;
-let computerScore = 0;
-
 // computer logic function
 function getComputerChoice() {
     const randNum = Math.random();
@@ -19,7 +15,11 @@ function getHumanChoice() {
    return userChoice;
 }
 // game logic function
-function playRound(humanChoice, computerChoice) {
+function playGame() {
+    let humanScore = 0;
+    let computerScore = 0;
+
+    function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase()
     if (humanChoice === computerChoice) {
         console.log("It's a tie")
@@ -41,8 +41,40 @@ function playRound(humanChoice, computerChoice) {
         computerScore++
     }
 }
-
+// Round 1
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
-
 playRound(humanSelection, computerSelection);
+
+// Round 2
+const humanSelection2 = getHumanChoice();
+const computerSelection2 = getComputerChoice();
+playRound(humanSelection2, computerSelection2);
+
+// Round 3
+const humanSelection3 = getHumanChoice();
+const computerSelection3 = getComputerChoice();
+playRound(humanSelection3, computerSelection3);
+
+// Round 4
+const humanSelection4 = getHumanChoice();
+const computerSelection4 = getComputerChoice();
+playRound(humanSelection4, computerSelection4);
+
+// Round 5
+const humanSelection5 = getHumanChoice();
+const computerSelection5 = getComputerChoice();
+playRound(humanSelection5, computerSelection5);
+
+console.log(`Final Score - You: ${humanScore}, Computer: ${computerScore}`);
+
+if (humanScore > computerScore) {
+    console.log("Congratulations! You are the overall winner!");
+} else if (humanScore < computerScore) {
+    console.log("Sorry, the computer wins this time.");
+} else {
+    console.log("It's a draw!");
+}
+}
+    
+playGame();
