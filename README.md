@@ -1,2 +1,3 @@
 # Rock-Paper-Scissors
-My first Javascript project! Playing rock paper scissors in the console.
+
+This is my first dedicated Javascript project! I'll be making a way to play rock paper scissors in the console. I'm not making a GUI yet, just getting the initial algorithm working.
